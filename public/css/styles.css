@@ -1,0 +1,125 @@
+body
+{
+min-height: 100vh;
+background-color: rgba(0, 0 , 0,0.5);
+}
+.navbar
+{
+
+    background-color: rgba(0, 0 , 0 , 0.8);
+
+}
+
+.nav-item
+{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: cursive;
+
+
+}
+
+.navbar-brand
+{
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: cursive;
+
+}
+
+
+@media screen and (max-width: 1127px) {
+  .nav-item
+  {
+    font-size: 1.0rem;
+    font-weight: 400;
+    font-family: cursive;
+
+  }
+
+  .btn-lg
+  {
+
+    padding:4px 9px;
+    font-size:90%;
+
+
+  }
+
+  .centered-div {
+    position: relative;
+
+
+background-image: url('/images/donate.jpg');
+background-position:50% 60% ;
+
+
+
+
+
+
+
+
+
+  }
+
+  .footer {
+    position: sticky;
+    top:100%;
+
+  }
+
+
+
+  body
+  {
+  min-height: 300vh;
+  }
+
+}
+
+
+.about-lg{
+  height: 800px;
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: white;
+  padding: 40px;
+
+
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+
+}
+.centered-card
+{
+
+
+  margin: auto;
+
+
+
+
+}
+
+.custom-objectives
+{
+  padding: 20px;
+}
+
+.footer {
+  position: sticky;
+  top:100%;
+
+}
+.text-div
+{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-size: 3rem;
+}
