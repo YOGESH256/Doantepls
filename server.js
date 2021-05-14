@@ -12,7 +12,7 @@ dotenv.config();
 let app = express();
 const instance = new Razorpay({
   key_id: process.env.KEY_ID,
-  key_secret: process.env.KEY_SECRET,
+  key_secret: process.env.KEY_SECRET
 });
 //Middlewares
 app.use(cors());
@@ -62,7 +62,7 @@ app.post("/api/payment/order", (req, res) => {
 
 app.post("/api/payment/verify", (req, res) => {
 
-  
+
   body = req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id;
 
   var expectedSignature = crypto
