@@ -51,7 +51,8 @@ background-color: rgba(0, 0 , 0,0.5);
 
 
 background-image: url('/images/donate.jpg');
-background-position:50% 60% ;
+background-position:50% 60%;
+
 
 
 
@@ -92,7 +93,7 @@ background-position:50% 60% ;
 .centered {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 55%;
   transform: translate(-50%, -50%);
 
 }
