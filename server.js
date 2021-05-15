@@ -69,7 +69,8 @@ app.post("/api/payment/verify", (req, res) => {
 
 
   body = req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id;
-  console.log(body);
+  console.log(req.body.razorpay_order_id);
+  console.log(req.body.razorpay_payment_id);
 
   var expectedSignature = crypto
     .createHmac("sha256", process.env.KEY_SECRET)
