@@ -46,6 +46,8 @@ app.post("/payments" , function(req , res) {
   global.contact = req.body.contact;
   global.amount = req.body.amount;
    key =  process.env.KEY_ID;
+   res.write(" ");
+
 
 
 })
