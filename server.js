@@ -47,12 +47,14 @@ app.post("/payments" , function(req , res) {
   global.amount = req.body.amount;
    key =  process.env.KEY_ID;
    res.status(204).send();
+   console.log(global.name , global.email, global.contact , global.amount);
 
 
 
 })
 app.post("/api/payment/order", (req, res) => {
   params = req.body;
+  console.log("Prams:"+ params);
   instance.orders
     .create(params)
     .then((data) => {
@@ -67,6 +69,7 @@ app.post("/api/payment/verify", (req, res) => {
 
 
   body = req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id;
+  console.log(body);
 
   var expectedSignature = crypto
     .createHmac("sha256", process.env.KEY_SECRET)
