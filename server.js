@@ -72,8 +72,8 @@ app.post("/api/payment/verify", (req, res) => {
     .createHmac("sha256", process.env.KEY_SECRET)
     .update(body.toString())
     .digest("hex");
-  // console.log("sig" + req.body.razorpay_signature);
-  // console.log("sig" + expectedSignature);
+  console.log("sig" + req.body.razorpay_signature);
+  console.log("sig" + expectedSignature);
   var response = { status: "failure" };
   if (expectedSignature === req.body.razorpay_signature && abou ===0 )
   {
