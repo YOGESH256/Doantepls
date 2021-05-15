@@ -36,6 +36,7 @@ app.get("/" , (req ,res) =>{
 
 app.get("/payments", (req, res) => {
   res.render("payment", { key: process.env.KEY_ID });
+
 });
 
 
@@ -72,7 +73,7 @@ app.post("/api/payment/verify", (req, res) => {
   // console.log("sig" + req.body.razorpay_signature);
   // console.log("sig" + expectedSignature);
   var response = { status: "failure" };
-  if (expectedSignature === req.body.razorpay_signature && abou ==0)
+  if (expectedSignature === req.body.razorpay_signature && abou ===0 )
   {
     // response = { status: "success" };
     abou = 1;
@@ -88,7 +89,7 @@ app.post("/api/payment/verify", (req, res) => {
       });
       const mailOptions={
           from: 'mithunfoundationdonation@gmail.com',
-          to:global.email,
+          to: 'yogeshkhatri2565@gmail.com',
           subject:`Donation to Mithun Foundation`,
           text:`We are GrateFul that you have Given us the Donation of ${global.amount}`,
           html:`<h1>From The Mithun Foundation</h1>
