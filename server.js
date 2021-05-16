@@ -97,7 +97,7 @@ app.post("/api/payment/verify", (req, res) => {
       });
       const mailOptions={
           from: 'mithunfoundationdonation@gmail.com',
-          to: 'yogeshkhatri2565@gmail.com',
+          to:global.email,
           subject:`Donation to Mithun Foundation`,
           text:`We are GrateFul that you have Given us the Donation of ${global.amount}`,
           html:`<h1>From The Mithun Foundation</h1>
