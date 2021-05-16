@@ -64,7 +64,7 @@
         xmlHttp.onreadystatechange = function(res) {
             if (xmlHttp.readyState === 4) {
                 res = JSON.parse(xmlHttp.responseText);
-                console.log(res.sub);
+
                 window.gh = res.sub.id
             }
         }
@@ -129,6 +129,7 @@
                 "color": "#0EB9F2"
             }
         };
+        console.log(options);
         var rzp1 = new Razorpay(options);
         rzp1.open();
         e.preventDefault();
