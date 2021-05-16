@@ -68,6 +68,7 @@ console.log(params.amount);
 app.post("/api/payment/verify", (req, res) => {
 
 
+
   body = req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id;
   console.log(req.body.razorpay_order_id);
   console.log(req.body.razorpay_payment_id);
