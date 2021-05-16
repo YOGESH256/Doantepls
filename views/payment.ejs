@@ -64,6 +64,7 @@
         xmlHttp.onreadystatechange = function(res) {
             if (xmlHttp.readyState === 4) {
                 res = JSON.parse(xmlHttp.responseText);
+                console.log(res.sub);
                 window.gh = res.sub.id
             }
         }

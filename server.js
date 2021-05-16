@@ -58,7 +58,7 @@ app.post("/api/payment/order", (req, res) => {
   instance.orders
     .create(params)
     .then((data) => {
-      console.log(data);
+      
       res.send({ sub: data, status: "success" });
     })
     .catch((error) => {
