@@ -70,7 +70,7 @@
 
             }
         }
-        xmlHttp.open("POST", url, true);
+        xmlHttp.open("POST", url, false);
         xmlHttp.setRequestHeader("Content-type", "application/json");
         xmlHttp.send(JSON.stringify(params));
     }
