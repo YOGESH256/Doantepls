@@ -54,7 +54,7 @@ app.post("/payments" , function(req , res) {
 })
 app.post("/api/payment/order", (req, res) => {
   params = req.body;
-console.log(params.amount);
+
   instance.orders
     .create(params)
     .then((data) => {
