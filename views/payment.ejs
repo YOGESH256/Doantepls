@@ -67,6 +67,7 @@
                 console.log(res.sub);
 
                 window.gh = res.sub.id
+
             }
         }
         xmlHttp.open("POST", url, true);
@@ -161,6 +162,7 @@
         xmlHttp.open("POST", url, true); // false for synchronous request
         xmlHttp.setRequestHeader("Content-type", "application/json");
         xmlHttp.send(JSON.stringify(params));
+        
     }
 </script>
 

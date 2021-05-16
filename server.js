@@ -58,7 +58,7 @@ app.post("/api/payment/order", (req, res) => {
   instance.orders
     .create(params)
     .then((data) => {
-      
+
       res.send({ sub: data, status: "success" });
     })
     .catch((error) => {
@@ -81,7 +81,7 @@ app.post("/api/payment/verify", (req, res) => {
   console.log("sig" + req.body.razorpay_signature);
   console.log("sig" + expectedSignature);
   var response = { status: "failure" };
-  if (expectedSignature === req.body.razorpay_signature && abou ===0 )
+  if (expectedSignature === req.body.razorpay_signature )
   {
     // response = { status: "success" };
     abou = 1;
