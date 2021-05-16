@@ -64,7 +64,7 @@
         xmlHttp.onreadystatechange = function(res) {
             if (xmlHttp.readyState === 4) {
                 res = JSON.parse(xmlHttp.responseText);
-                window.abcdgh = res.sub.id
+                window.gh = res.sub.id
             }
         }
         xmlHttp.open("POST", url, true);
@@ -114,7 +114,7 @@
             "currency": "INR",
             "name": "Mithun Foundation",
             "description": "Donation to See Smiles",
-            "order_id":window.abcdgh ,
+            "order_id":window.gh ,
             "handler": function(response) {
                 window.b = response.razorpay_payment_id;
                 window.c = response.razorpay_order_id;
