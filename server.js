@@ -81,7 +81,7 @@ app.post("/api/payment/verify", (req, res) => {
   console.log("sig" + req.body.razorpay_signature);
   console.log("sig" + expectedSignature);
   var response = { status: "failure" };
-  if (expectedSignature === req.body.razorpay_signature )
+  if (expectedSignature === req.body.razorpay_signature  && abou ===0 )
   {
     // response = { status: "success" };
     abou = 1;
