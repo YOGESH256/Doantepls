@@ -61,9 +61,9 @@
             payment_capture: '1'
         };
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.onreadystatechange = function(res) {
+        xmlHttp.onreadystatechange = async(res) => {
             if (xmlHttp.readyState === 4) {
-                res = JSON.parse(xmlHttp.responseText);
+                res = await JSON.parse(xmlHttp.responseText);
                 console.log(res.sub);
 
                 window.gh = res.sub.id
@@ -162,7 +162,7 @@
         xmlHttp.open("POST", url, true); // false for synchronous request
         xmlHttp.setRequestHeader("Content-type", "application/json");
         xmlHttp.send(JSON.stringify(params));
-        
+
     }
 </script>
 
